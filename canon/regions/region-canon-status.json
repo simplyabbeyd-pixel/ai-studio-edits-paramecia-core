@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Paramecia / Triquel Living Atlas",
+  "core_axiom": "Nothing flourishes alone.",
+  "accords": {
+    "Harmony": "What wants to flourish?",
+    "Midnight": "What must be honored?",
+    "Recognition": "What is actually here?"
+  },
+  "structural_rules": [
+    "Each region is both habitat and civic pedagogy.",
+    "Kin are cultural participants in ecological relations, not biome mascots.",
+    "Observation does not create authority.",
+    "Beaverkin Way is connective infrastructure and corridor logic, not simply a sixth biome."
+  ],
+  "regions": [
+    {
+      "id": "great-meadows-grassland",
+      "name": "Great Meadows Grassland",
+      "classification": "region",
+      "canon_status": "locked-core",
+      "gift": "public belonging, visibility, abundance, shared feasts",
+      "risk": "overexposure and consensus flattening quieter needs",
+      "repair_key": "listening circles and shaded retreat zones",
+      "expansion_status": "provisional"
+    },
+    {
+      "id": "flowering-orchard",
+      "name": "Flowering Orchard",
+      "classification": "region",
+      "canon_status": "locked-core",
+      "gift": "pollinator kinship, craft memory, sensory abundance",
+      "risk": "beauty becoming obligation, labor, or surveillance",
+      "repair_key": "unjudged harvests and ugly-fruit rites",
+      "expansion_status": "provisional"
+    },
+    {
+      "id": "nightforest-canopy",
+      "name": "Nightforest Canopy",
+      "classification": "region",
+      "canon_status": "locked-core",
+      "gift": "hidden routes, vigilance, nocturnal diplomacy, protective secrecy",
+      "risk": "watchfulness becoming ownership and secrecy becoming authority",
+      "repair_key": "named exits and witness agreements",
+      "expansion_status": "provisional"
+    },
+    {
+      "id": "mycelial-marshes",
+      "name": "Mycelial Marshes",
+      "classification": "region",
+      "canon_status": "locked-core",
+      "gift": "repair networks, filtration, decomposition wisdom, soft memory",
+      "risk": "absorption without consent and communal memory swallowing private grief",
+      "repair_key": "boundary spores and opt-out paths",
+      "expansion_status": "provisional"
+    },
+    {
+      "id": "echoing-caverns",
+      "name": "Echoing Caverns",
+      "classification": "region",
+      "canon_status": "locked-core",
+      "gift": "ancestry, resonance, mineral memory, underground shelter",
+      "risk": "old voices overruling the living and echoes impersonating truth",
+      "repair_key": "living-voice priority rites and thresholded disclosure",
+      "expansion_status": "provisional"
+    },
+    {
+      "id": "beaverkin-way",
+      "name": "Beaverkin Way",
+      "classification": "inter-region-corridor-system",
+      "canon_status": "locked-structural-role",
+      "gift": "infrastructure as care through negotiated flow and safe-return routes",
+      "risk": "managed passage becoming control",
+      "repair_key": "flow councils and crossing consent",
+      "expansion_status": "provisional"
+    }
+  ],
+  "quarantined_noncanon": [
+    "Accord of Relation",
+    "Accord of Consent",
+    "Accord of Regeneration",
+    "Beaverkin Way treated as merely another territorial biome",
+    "one-to-one kin species ownership of regions",
+    "connected terrain interpreted as automatically public or available"
+  ]
+}

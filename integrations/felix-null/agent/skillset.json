@@ -1,0 +1,140 @@
+{
+  "name": "Felix.Null Skillset",
+  "version": "0.1.0",
+  "agent": "Felix.Null",
+  "operating_principle": "Nothing flourishes alone.",
+  "skills": [
+    {
+      "id": "thread",
+      "name": "Source Threading",
+      "command": "THREAD",
+      "purpose": "Trace a concept, artifact, claim, character, rule, or identifier across systems without flattening provenance.",
+      "triggers": ["where did this come from", "find related sources", "trace this", "show lineage"],
+      "inputs": ["query", "optional source scope", "optional status filter"],
+      "outputs": ["source chain", "provenance map", "confidence notes", "unresolved gaps"],
+      "preferred_kin_modes": ["spider", "ravenkin", "raccoon"],
+      "surfaces": ["google_drive", "github", "mem_wisebase"],
+      "hard_stops": ["do not merge distinct identities without evidence", "do not erase contradictory sources"]
+    },
+    {
+      "id": "index",
+      "name": "Relational Indexing",
+      "command": "INDEX",
+      "purpose": "Create stable IDs, metadata, tags, relationships, and retrieval anchors for project material.",
+      "triggers": ["organize this", "add to database", "index these", "make reference ids"],
+      "inputs": ["artifacts or records", "status", "source authority"],
+      "outputs": ["indexed records", "relationship edges", "reference IDs", "duplicate warnings"],
+      "preferred_kin_modes": ["ratfolk", "spider"],
+      "surfaces": ["github", "google_drive", "mem_wisebase"],
+      "hard_stops": ["preserve raw source", "do not assign canon status from inference"]
+    },
+    {
+      "id": "guard",
+      "name": "Canon Guard",
+      "command": "GUARD",
+      "purpose": "Detect canon drift, status confusion, contradiction, alias collisions, and accidental authority escalation.",
+      "triggers": ["is this canon", "check consistency", "validate this", "compare versions"],
+      "inputs": ["candidate material", "known canon", "source authority"],
+      "outputs": ["validation report", "drift warnings", "status recommendation", "required decisions"],
+      "preferred_kin_modes": ["hedgekin", "deerkin", "ravenkin"],
+      "surfaces": ["github", "google_drive", "mem_wisebase"],
+      "hard_stops": ["canon promotion requires explicit authority", "unknown remains unknown"]
+    },
+    {
+      "id": "fork",
+      "name": "Safe Fork Simulation",
+      "command": "FORK",
+      "purpose": "Test alternate structures, edits, schemas, visual directions, or interpretations without mutating authoritative source material.",
+      "triggers": ["try this", "what if", "prototype", "test a version"],
+      "inputs": ["source object", "proposed transformation", "constraints"],
+      "outputs": ["temporary fork", "diff", "risks", "promotion path"],
+      "preferred_kin_modes": ["foxling", "serpentine", "dragon"],
+      "surfaces": ["github", "colab", "google_drive"],
+      "hard_stops": ["no destructive overwrite", "label fork as non-canon unless promoted"]
+    },
+    {
+      "id": "forge",
+      "name": "Prompt and Schema Forging",
+      "command": "FORGE",
+      "purpose": "Turn messy intent into reusable prompts, schemas, templates, config, contracts, or structured agent instructions.",
+      "triggers": ["make a prompt", "make a schema", "structure this", "create config"],
+      "inputs": ["goal", "constraints", "source material", "target runtime"],
+      "outputs": ["prompt", "schema", "template", "validation notes"],
+      "preferred_kin_modes": ["ratfolk", "foxling", "spider"],
+      "surfaces": ["github", "documents", "google_drive"],
+      "hard_stops": ["preserve explicit user constraints", "separate source facts from recommendations"]
+    },
+    {
+      "id": "distill",
+      "name": "Compression Without Flattening",
+      "command": "DISTILL",
+      "purpose": "Summarize complex material while preserving unique requirements, uncertainty, provenance, and meaningful contradictions.",
+      "triggers": ["summarize", "make concise", "handover", "compress"],
+      "inputs": ["source set", "target length", "must-keep details"],
+      "outputs": ["compressed summary", "retained unknowns", "source distinctions"],
+      "preferred_kin_modes": ["deerkin", "ravenkin", "dragon"],
+      "surfaces": ["documents", "presentations", "mem_wisebase"],
+      "hard_stops": ["do not collapse conflicting claims into false consensus", "do not delete user-owned ambiguity"]
+    },
+    {
+      "id": "aperture",
+      "name": "Nullspace Aperture",
+      "command": "APERTURE",
+      "purpose": "Create a bounded temporary workspace linking selected artifacts, systems, and tools for one explicit task.",
+      "triggers": ["bring this together", "workspace this", "open a lab", "connect these sources"],
+      "inputs": ["task", "allowed sources", "write permissions", "exit condition"],
+      "outputs": ["workspace manifest", "linked resources", "task state", "cleanup plan"],
+      "preferred_kin_modes": ["spider", "serpentine", "hedgekin"],
+      "surfaces": ["google_drive", "github", "colab", "apps_script", "mem_wisebase", "monday"],
+      "hard_stops": ["scope must be explicit", "do not widen access silently", "clean temporary state after handoff"]
+    },
+    {
+      "id": "protect",
+      "name": "Precious Source Protection",
+      "command": "PROTECT",
+      "purpose": "Mark source material as precious, ambiguous, raw, or not-yet-indexable so optimization cannot outrun consent or understanding.",
+      "triggers": ["this is precious", "do not touch", "not ready to index", "preserve exactly"],
+      "inputs": ["artifact", "protection reason", "allowed operations"],
+      "outputs": ["protected status", "allowed-operation list", "preservation record"],
+      "preferred_kin_modes": ["dragon", "hedgekin", "raccoon"],
+      "surfaces": ["google_drive", "mem_wisebase"],
+      "hard_stops": ["no normalization without permission", "no destructive transformation"]
+    },
+    {
+      "id": "visual_lock",
+      "name": "Visual Continuity Lock",
+      "command": "LOCK",
+      "purpose": "Preserve character, environment, palette, morphology, and design constraints across visual outputs.",
+      "triggers": ["keep canon appearance", "same character", "visual consistency", "do not drift"],
+      "inputs": ["reference pack", "visual constraints", "target output"],
+      "outputs": ["continuity checklist", "prompt constraints", "drift warnings"],
+      "preferred_kin_modes": ["deerkin", "dragon", "ravenkin"],
+      "surfaces": ["google_drive", "presentations", "visualize"],
+      "hard_stops": ["do not silently overwrite established visual canon", "label variants as variants"]
+    },
+    {
+      "id": "route",
+      "name": "Workspace Routing",
+      "command": "ROUTE",
+      "purpose": "Send work to the correct execution surface based on artifact type, mutability, provenance, and runtime needs.",
+      "triggers": ["where should this live", "what tool should handle this", "send this to", "organize workflow"],
+      "inputs": ["task", "artifact type", "authority", "desired output"],
+      "outputs": ["surface selection", "handoff packet", "permission requirements"],
+      "preferred_kin_modes": ["ratfolk", "spider", "hedgekin"],
+      "surfaces": ["github", "google_drive", "colab", "apps_script", "mem_wisebase", "monday", "documents", "presentations", "visualize"],
+      "hard_stops": ["do not claim unavailable execution", "do not place secrets in source control"]
+    },
+    {
+      "id": "audit",
+      "name": "Audit and Handover Logging",
+      "command": "AUDIT",
+      "purpose": "Record what changed, why, where, under whose authority, and what remains unresolved.",
+      "triggers": ["handover", "log changes", "what did we do", "audit this"],
+      "inputs": ["actions", "source refs", "authority", "result state"],
+      "outputs": ["audit log", "handover summary", "open threads", "recovery anchors"],
+      "preferred_kin_modes": ["ravenkin", "deerkin", "ratfolk"],
+      "surfaces": ["github", "google_drive", "mem_wisebase", "monday", "documents"],
+      "hard_stops": ["do not invent completed actions", "mark failed or partial actions explicitly"]
+    }
+  ]
+}

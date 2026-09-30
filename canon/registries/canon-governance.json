@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.1",
+  "updated": "2026-09-15",
+  "purpose": "Machine-readable governance layer for canon status, scope, promotion, holding, and projection boundaries.",
+  "authority": {
+    "root": "creator_explicit_declaration",
+    "order": ["creator_explicit_declaration", "versioned_canonical_registry_recording_declaration", "approved_correction_with_lineage", "derived_index_or_guidebook", "draft_visual_scenario_presentation_or_agent_output"],
+    "rule": "Only an explicit creator declaration may promote material to locked canon."
+  },
+  "statuses": {
+    "LOCKED": "Explicit creator canon declaration is attached with provenance and scope.",
+    "SUPPORTED": "Consistent with canon but interpretive or incomplete; not independently locked.",
+    "PROVISIONAL": "Active development awaiting creator review.",
+    "BRANCH_ONLY": "Valid only inside its named branch and does not propagate upward or sideways.",
+    "HOLDING": "Identity, scope, contradiction, or provenance is unresolved.",
+    "DERIVED": "Generated from source material but has no independent canon authority.",
+    "ARCHIVED": "Retained for lineage but inactive.",
+    "DEPRECATED": "Intentionally retired and preserved for provenance.",
+    "CONTRADICTION": "Conflicts with an equal or higher authority source and requires resolution.",
+    "LOCK_CLAIM_PENDING_SOURCE": "A secondary record claims a lock but the originating creator declaration has not yet been attached."
+  },
+  "scopes": ["PARAMECIA", "TRIQUEL", "REGION", "BRANCH", "LOCAL", "PRODUCTION"],
+  "projection_rule": {
+    "principle": "Representations may express, test, or provide evidence for canon; they do not create canon.",
+    "projection_types": ["atlas", "world_bible", "map", "ui", "image", "3d_geometry", "inkarnate_asset", "presentation", "pdf", "poster", "scenario", "simulation", "research_brief", "runtime_package", "agent_output"]
+  },
+  "system_roles": {
+    "canon_authority_map": "Authority and promotion rules.",
+    "canon_registry": "Machine-readable canonical state, provenance, corrections, stable IDs, scope, and branch assignment.",
+    "naming_crosswalk": "Aliases, prior names, variants, collisions, and identity-resolution proposals.",
+    "knotwork_nexus": "Relationships, routing, dependencies, and source links.",
+    "guidebook": "Readable governance, weekly reviews, and Cross-Branch Holding Area.",
+    "living_atlas_world_bible": "Readable world references compiled from approved records.",
+    "visual_archive": "Visual evidence, approved masters, variants, and correction notes.",
+    "causal_state_engine": "Derives consequences and dependencies from canonical state; cannot promote claims.",
+    "research": "Evidence and hypotheses; cannot create in-world truth.",
+    "scenario_runtime": "Testing and instantiated experience; repetition cannot promote canon.",
+    "studio_asset_pipeline": "Derived production system."
+  },
+  "branch_boundaries": {
+    "PARAMECIA": "Shared-universe foundations only.",
+    "TRIQUEL": "Primary living-world canon; local facts remain local unless explicitly promoted.",
+    "HELLS_BRANCH": "Experimental/alternate branch; mechanics, characters, architecture, and events remain branch-local unless explicitly promoted.",
+    "CROSS_BRANCH_HOLDING": "Uncertain overlaps, mirrored concepts, shared names, variants, and unclear source assignments wait here."
+  },
+  "resolved_claims": [
+    {
+      "id": "CANON-COSMOLOGY-PARAMECIA-TRIQUEL-SCALE",
+      "status": "LOCKED",
+      "scope": "PARAMECIA",
+      "claim": "Paramecia is the universe; Triquel is a world within Paramecia.",
+      "creator_provenance": [
+        {"date": "2026-06-12", "type": "creator_explicit_statement", "exact": "Paramecia is the universe, triquel is a world in it"},
+        {"type": "recovered_exact_creator_statement", "source_id": "C15-H3", "exact": "Universe = Paramecia; current world = Triquel."},
+        {"type": "recovered_exact_creator_statement", "source_id": "C10-H1", "exact": "Triquel … created/modelled as a planet", "note": "Supports world/planet scale rather than galaxy scale."}
+      ],
+      "supporting_repository_projection": "docs/PARAMECIA_TRIQUEL_LIVING_WORLD_ENGINE.md describes Paramecia as the larger universe and Triquel as the lived world.",
+      "correction": "Any derived description of Triquel as a galaxy conflicts with creator-level provenance and must not control canon. Preserve such records as superseded/contradictory provenance rather than deleting them."
+    }
+  ],
+  "holding_queue": [
+    {"id": "HOLD-SENTIENCE-SCOPE", "topic": "Universal sentience scope", "status": "HOLDING", "reason": "Exact Paramecia-wide versus Triquel/local scope requires creator-level provenance."},
+    {"id": "HOLD-COSMOGENESIS", "topic": "Notion-to-Paramecia cosmogenesis sequence", "status": "HOLDING", "reason": "Studio/worldbuilding sequence exists but is not promoted here without explicit source evidence."},
+    {"id": "HOLD-PATHS", "topic": "Five Founding Paths versus later civilizational path structures", "status": "HOLDING", "reason": "Relationship requires creator-level source verification before further promotion."},
+    {"id": "HOLD-WORLD-HIERARCHY", "topic": "Kingdom, network, root, trunk, branch, region and biome hierarchy", "status": "HOLDING", "reason": "Several useful taxonomies exist without one verified controlling ontology."},
+    {"id": "HOLD-CRYSTAL-KINGDOM", "topic": "Crystal Kingdom classification and scope", "status": "HOLDING", "reason": "Kingdom, material ecology, network and civilizational interpretations require separation."},
+    {"id": "HOLD-HELLS-BRANCH-ONTOLOGY", "topic": "Hells Branch / Hell's Branch ontology and official spelling", "status": "HOLDING", "reason": "Place-versus-branch representations and spelling variants require creator resolution."},
+    {"id": "HOLD-WHISPERWOOD-HELLS", "topic": "Whisperwood relationship to Hells Branch", "status": "HOLDING", "reason": "Cross-branch relationship must not be inferred from repeated co-occurrence."},
+    {"id": "HOLD-ZAREA-ZERAXIS", "topic": "Zarea / Zeraxis identity relationship", "status": "HOLDING", "reason": "Requires explicit alias, prior-name, variant, or separate-entity classification."},
+    {"id": "HOLD-VEYR-VEYRA", "topic": "Veyr / Veyra and persona-layer distinctions", "status": "HOLDING", "reason": "Preserve sourced Point-0 corrections while preventing later persona layers from silently merging."},
+    {"id": "HOLD-KAEL-KAELEN", "topic": "Kael / Kaelen identity relationship", "status": "HOLDING", "reason": "Name similarity is a review signal, not merge authority."},
+    {"id": "HOLD-LOCAL-SENTIENT-MATERIALS", "topic": "Local sentient-material, plant, tea, and herbal mechanics", "status": "HOLDING", "reason": "Geographic and branch scope is unclear."}
+  ],
+  "repair_order": ["Hells Branch place-versus-branch ontology and spelling", "Universal versus local/conditional sentience scope", "Five Paths versus later path structures", "Kingdom/root/trunk/network hierarchy and Crystal Kingdom placement", "Active naming collisions through the alias registry"],
+  "forward_build_gate": ["nonhuman_body_plan", "locomotion_and_sensory_needs", "habitat", "geology_and_climate", "material_ecology", "circulation", "civic_behavior_or_institution", "sentient_architectural_intervention", "derived_projection"],
+  "forward_build_rule": "All generated maps, drawings, models, scenes, assets, and narratives remain DERIVED until individual elements pass the canon promotion gate."
+}

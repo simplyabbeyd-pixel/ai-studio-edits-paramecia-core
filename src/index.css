@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0c0a09;
+    color: #f5f5f4;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78716c;
+}
+
+/* =========================================================================
+   PARCHMENT THEME (High-Contrast Archival Manuscript)
+   Designed for optimal readability, restful contrast, and cartographic warmth
+   ========================================================================= */
+
+[data-theme="parchment"] {
+  color-scheme: light;
+}
+
+[data-theme="parchment"] body {
+  background-color: #f6f1e5 !important;
+  color: #1c1917 !important;
+}
+
+/* Scrollbars in parchment mode */
+[data-theme="parchment"] ::-webkit-scrollbar-track {
+  background: #ede4d1;
+}
+[data-theme="parchment"] ::-webkit-scrollbar-thumb {
+  background: #baa98a;
+}
+[data-theme="parchment"] ::-webkit-scrollbar-thumb:hover {
+  background: #998668;
+}
+
+/* Selection */
+[data-theme="parchment"] ::selection {
+  background-color: rgba(180, 83, 9, 0.25);
+  color: #78350f;
+}
+
+/* Core background surfaces */
+[data-theme="parchment"] .bg-stone-950 {
+  background-color: #f6f1e5 !important;
+}
+[data-theme="parchment"] .bg-stone-900 {
+  background-color: #eee6d6 !important;
+}
+[data-theme="parchment"] .bg-stone-900\/60,
+[data-theme="parchment"] .bg-stone-900\/70,
+[data-theme="parchment"] .bg-stone-900\/80,
+[data-theme="parchment"] .bg-stone-900\/90,
+[data-theme="parchment"] .bg-stone-900\/95 {
+  background-color: #f2eadb !important;
+}
+[data-theme="parchment"] .bg-stone-950\/40,
+[data-theme="parchment"] .bg-stone-950\/50,
+[data-theme="parchment"] .bg-stone-950\/60,
+[data-theme="parchment"] .bg-stone-950\/70,
+[data-theme="parchment"] .bg-stone-950\/80 {
+  background-color: #fdfaf3 !important;
+}
+[data-theme="parchment"] .bg-stone-800 {
+  background-color: #dfd4bf !important;
+}
+[data-theme="parchment"] .hover\:bg-stone-800:hover {
+  background-color: #ded3bc !important;
+}
+[data-theme="parchment"] .hover\:bg-stone-900:hover {
+  background-color: #e5dcce !important;
+}
+[data-theme="parchment"] .hover\:bg-stone-700:hover {
+  background-color: #cbbe9f !important;
+}
+
+/* Borders */
+[data-theme="parchment"] .border-stone-800,
+[data-theme="parchment"] .border-stone-800\/80,
+[data-theme="parchment"] .border-stone-800\/60,
+[data-theme="parchment"] .border-stone-800\/50,
+[data-theme="parchment"] .border-stone-800\/40,
+[data-theme="parchment"] .border-stone-800\/30 {
+  border-color: #cfc1a5 !important;
+}
+[data-theme="parchment"] .border-stone-700 {
+  border-color: #baa785 !important;
+}
+
+/* High-contrast ink text */
+[data-theme="parchment"] .text-stone-100,
+[data-theme="parchment"] .text-stone-200 {
+  color: #1c1917 !important;
+}
+[data-theme="parchment"] .text-stone-300 {
+  color: #292524 !important;
+}
+[data-theme="parchment"] .text-stone-400 {
+  color: #57534e !important;
+}
+[data-theme="parchment"] .text-stone-500 {
+  color: #78716c !important;
+}
+[data-theme="parchment"] .text-stone-600 {
+  color: #a8a29e !important;
+}
+[data-theme="parchment"] input::placeholder,
+[data-theme="parchment"] textarea::placeholder {
+  color: #78716c !important;
+}
+
+/* Amber/Ochre ink accents */
+[data-theme="parchment"] .text-amber-400,
+[data-theme="parchment"] .text-amber-300,
+[data-theme="parchment"] .text-amber-200 {
+  color: #92400e !important;
+}
+[data-theme="parchment"] .bg-amber-500 {
+  background-color: #b45309 !important;
+  color: #fef3c7 !important;
+}
+[data-theme="parchment"] .hover\:bg-amber-400:hover {
+  background-color: #92400e !important;
+  color: #fef3c7 !important;
+}
+[data-theme="parchment"] .bg-amber-950,
+[data-theme="parchment"] .bg-amber-950\/20,
+[data-theme="parchment"] .bg-amber-950\/30,
+[data-theme="parchment"] .bg-amber-950\/40 {
+  background-color: #fcf2e3 !important;
+}
+[data-theme="parchment"] .border-amber-800,
+[data-theme="parchment"] .border-amber-900,
+[data-theme="parchment"] .border-amber-800\/30,
+[data-theme="parchment"] .border-amber-800\/40,
+[data-theme="parchment"] .border-amber-900\/40,
+[data-theme="parchment"] .border-amber-500 {
+  border-color: #c4924a !important;
+}
+
+/* Emerald/Forest green ink accents */
+[data-theme="parchment"] .text-emerald-400,
+[data-theme="parchment"] .text-emerald-300,
+[data-theme="parchment"] .text-emerald-200 {
+  color: #065f46 !important;
+}
+[data-theme="parchment"] .bg-emerald-950,
+[data-theme="parchment"] .bg-emerald-950\/20,
+[data-theme="parchment"] .bg-emerald-950\/30,
+[data-theme="parchment"] .bg-emerald-950\/40 {
+  background-color: #eaf5ed !important;
+}
+[data-theme="parchment"] .border-emerald-800,
+[data-theme="parchment"] .border-emerald-900,
+[data-theme="parchment"] .border-emerald-800\/40,
+[data-theme="parchment"] .border-emerald-800\/50,
+[data-theme="parchment"] .border-emerald-500 {
+  border-color: #72a884 !important;
+}
+
+/* Sapphire/Cyan ink accents */
+[data-theme="parchment"] .text-cyan-400,
+[data-theme="parchment"] .text-cyan-300,
+[data-theme="parchment"] .text-cyan-200 {
+  color: #0369a1 !important;
+}
+[data-theme="parchment"] .bg-cyan-950,
+[data-theme="parchment"] .bg-cyan-950\/20,
+[data-theme="parchment"] .bg-cyan-950\/30,
+[data-theme="parchment"] .bg-cyan-950\/40 {
+  background-color: #e5f1f8 !important;
+}
+[data-theme="parchment"] .border-cyan-800,
+[data-theme="parchment"] .border-cyan-900,
+[data-theme="parchment"] .border-cyan-800\/40,
+[data-theme="parchment"] .border-cyan-800\/50 {
+  border-color: #82b9dc !important;
+}
+
+/* Crimson/Vermilion ink accents */
+[data-theme="parchment"] .text-rose-400,
+[data-theme="parchment"] .text-rose-300,
+[data-theme="parchment"] .text-rose-200,
+[data-theme="parchment"] .text-red-400,
+[data-theme="parchment"] .text-red-300,
+[data-theme="parchment"] .text-red-200 {
+  color: #991b1b !important;
+}
+[data-theme="parchment"] .bg-rose-950,
+[data-theme="parchment"] .bg-rose-950\/20,
+[data-theme="parchment"] .bg-rose-950\/30,
+[data-theme="parchment"] .bg-rose-950\/40,
+[data-theme="parchment"] .bg-red-950,
+[data-theme="parchment"] .bg-red-950\/20,
+[data-theme="parchment"] .bg-red-950\/30,
+[data-theme="parchment"] .bg-red-950\/40 {
+  background-color: #faeaed !important;
+}
+[data-theme="parchment"] .border-rose-900,
+[data-theme="parchment"] .border-red-900,
+[data-theme="parchment"] .border-rose-800,
+[data-theme="parchment"] .border-red-800 {
+  border-color: #d694a0 !important;
+}
+
+/* Violet/Purple ink accents */
+[data-theme="parchment"] .text-violet-400,
+[data-theme="parchment"] .text-violet-300,
+[data-theme="parchment"] .text-violet-200 {
+  color: #5b21b6 !important;
+}
+[data-theme="parchment"] .bg-violet-950,
+[data-theme="parchment"] .bg-violet-950\/20,
+[data-theme="parchment"] .bg-violet-950\/30 {
+  background-color: #f3ebfc !important;
+}
+[data-theme="parchment"] .border-violet-900,
+[data-theme="parchment"] .border-violet-800 {
+  border-color: #bfa0e8 !important;
+}

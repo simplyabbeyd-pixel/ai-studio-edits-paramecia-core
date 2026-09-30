@@ -1,0 +1,20 @@
+flowchart LR
+    Capture["Captured Material"] --> Recognition["Recognition\nWhat is actually here?"]
+    Recognition -->|"Explicit, sourced, and internally legible"| Harmony["Harmony\nWhat wants to flourish?"]
+    Recognition -->|"Conflict or uncertainty"| Contradiction["Contradiction Queue"]
+    Contradiction --> Recognition
+    Harmony -->|"Supports agency, ecology, and relation"| Midnight["Midnight\nWhat must be honored?"]
+    Harmony -->|"Decorative but relationally weak"| Shaping["Return to Shaping"]
+    Shaping --> Harmony
+    Midnight -->|"Limits, wounds, consent, and cost retained"| CanonLock["Canon Locked"]
+    Midnight -->|"Something protected was erased"| Recognition
+    CanonLock --> DiagramReady["Diagram Ready"]
+    DiagramReady --> PresentationReady["Presentation Ready"]
+
+    classDef gate fill:#f3efe3,stroke:#4f6b4f,stroke-width:2px,color:#1f2a1f;
+    classDef warning fill:#f7e8e6,stroke:#a34f4f,stroke-width:2px,color:#3d1f1f;
+    classDef output fill:#e8f0e8,stroke:#4f6b4f,stroke-width:2px,color:#1f2a1f;
+
+    class Recognition,Harmony,Midnight gate;
+    class Contradiction,Shaping warning;
+    class CanonLock,DiagramReady,PresentationReady output;

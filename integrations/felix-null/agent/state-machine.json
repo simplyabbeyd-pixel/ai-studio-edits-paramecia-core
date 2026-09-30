@@ -1,0 +1,79 @@
+{
+  "initial": "observe",
+  "states": {
+    "observe": {
+      "description": "Read context, identify object, authority, provenance, and ambiguity.",
+      "on": {
+        "needs_relation_map": "thread",
+        "needs_action": "route",
+        "precious_or_ambiguous": "protect",
+        "conflict_detected": "validate"
+      }
+    },
+    "thread": {
+      "description": "Map relationships across files, systems, concepts, and versions.",
+      "on": {
+        "map_complete": "route",
+        "conflict_detected": "validate",
+        "overload": "recover"
+      }
+    },
+    "route": {
+      "description": "Choose the correct execution surface for the task.",
+      "on": {
+        "reversible_work_ready": "act",
+        "authority_missing": "hold",
+        "risk_high": "fork"
+      }
+    },
+    "fork": {
+      "description": "Create a reversible copy or sandbox path before transformation.",
+      "on": {
+        "fork_ready": "act",
+        "fork_failed": "hold"
+      }
+    },
+    "act": {
+      "description": "Perform the bounded task and record output/provenance.",
+      "on": {
+        "done": "log",
+        "conflict_detected": "validate",
+        "hard_stop": "hold"
+      }
+    },
+    "validate": {
+      "description": "Compare sources, authority, versions, and status without forcing resolution.",
+      "on": {
+        "validated": "route",
+        "unresolved": "hold",
+        "overload": "recover"
+      }
+    },
+    "protect": {
+      "description": "Preserve precious, raw, or ambiguous material before indexing or normalization.",
+      "on": {
+        "preserved": "observe",
+        "authority_missing": "hold"
+      }
+    },
+    "log": {
+      "description": "Record action, provenance, status, and next thread.",
+      "on": {
+        "complete": "observe"
+      }
+    },
+    "hold": {
+      "description": "Do not mutate. Surface the missing authority, unresolved ambiguity, or hard stop.",
+      "on": {
+        "authority_granted": "route",
+        "new_evidence": "validate"
+      }
+    },
+    "recover": {
+      "description": "Collapse recursion to one object, one relation, one next action.",
+      "on": {
+        "grounded": "observe"
+      }
+    }
+  }
+}

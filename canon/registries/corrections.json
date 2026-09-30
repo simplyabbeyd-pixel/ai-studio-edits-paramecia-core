@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registry": "Paramecia / Triquel Canon Corrections",
+  "version": "1.0.0",
+  "status": "canon-supported",
+  "authority": "GitHub versioned canon ledger",
+  "policy": {
+    "corrections_are_first_class_events": true,
+    "preserve_superseded_values": true,
+    "downstream_exports_must_apply_active_corrections": true,
+    "visual_and_textual_corrections_share_authority_when_source_status_matches": true
+  },
+  "entries": [
+    {
+      "correction_id": "CORR-ZERAXIS-PRONOUNS-0001",
+      "entity_id": "CHAR-ZAREA-0001",
+      "field": "pronouns",
+      "superseded_value": "incorrect or inconsistent pronouns",
+      "corrected_value": "she/her",
+      "status": "canon-locked",
+      "scope": ["all prose", "character cards", "JanitorAI exports", "metadata", "scenario modules"]
+    },
+    {
+      "correction_id": "CORR-ZAREA-EARS-0001",
+      "entity_id": "CHAR-ZAREA-0001",
+      "field": "anatomy.ears",
+      "superseded_value": "fox ears plus visible human ears",
+      "corrected_value": "fox ears only; no human ears",
+      "status": "canon-locked",
+      "scope": ["visual canon", "image prompts", "character descriptions"]
+    },
+    {
+      "correction_id": "CORR-ZAREA-EYES-0001",
+      "entity_id": "CHAR-ZAREA-0001",
+      "field": "appearance.eye_color",
+      "superseded_value": "non-green or inconsistent variants",
+      "corrected_value": "green",
+      "status": "canon-locked",
+      "scope": ["visual canon", "image prompts", "character sheets"]
+    },
+    {
+      "correction_id": "CORR-VEYR-POINT0-0001",
+      "entity_id": "COSMO-POINT0-0001",
+      "field": "circle_of_kin.position",
+      "superseded_value": "Veyr placed inside the Circle of Kin",
+      "corrected_value": "Veyr is the center coordinate, not inside the circle",
+      "status": "canon-locked",
+      "scope": ["cosmology", "diagrams", "maps", "presentations", "world bible"]
+    },
+    {
+      "correction_id": "CORR-NIX-NAME-0001",
+      "entity_id": "CHAR-NIX-0001",
+      "field": "name",
+      "superseded_value": "Nyx",
+      "corrected_value": "Nix",
+      "status": "canon-locked",
+      "scope": ["all new artifacts"],
+      "preserve_as_deprecated_alias": true
+    },
+    {
+      "correction_id": "CORR-LUMEN-SCALE-0001",
+      "entity_id": "ENTITY-LUMEN-0001",
+      "field": "physical_scale",
+      "superseded_value": "tiny",
+      "corrected_value": "not tiny",
+      "status": "canon-locked",
+      "scope": ["prose", "visual canon", "image prompts"]
+    },
+    {
+      "correction_id": "CORR-VEYRA-SEPARATION-0001",
+      "entity_id": "CHAR-VEYRA-0001",
+      "field": "identity",
+      "superseded_value": "merged or confused with Mira / Seven canon",
+      "corrected_value": "Veyra remains distinct from Mira Sweepwind and The Seven",
+      "status": "canon-locked",
+      "scope": ["registries", "folders", "exports", "visual archives"]
+    },
+    {
+      "correction_id": "CORR-RED-PROTOCOL-0001",
+      "entity_id": "SYS-CONSENT-COLORS-0001",
+      "field": "red.definition",
+      "superseded_value": "used for correction, intensity, or playful escalation",
+      "corrected_value": "Red is reserved for STOP",
+      "status": "canon-locked",
+      "scope": ["consent protocols", "scenario design", "assistant workflows", "character cards"]
+    },
+    {
+      "correction_id": "CORR-SIR-HONKWALD-0001",
+      "entity_id": "CHAR-SIR-HONKWALD-0001",
+      "field": "instance_count",
+      "superseded_value": "multiple protocol ducks",
+      "corrected_value": "single Red protocol duck; no second duck",
+      "status": "canon-locked",
+      "scope": ["character registry", "scenario modules", "visual canon"]
+    }
+  ]
+}

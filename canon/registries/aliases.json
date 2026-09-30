@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registry": "Paramecia / Triquel Alias and Naming Crosswalk",
+  "version": "1.0.0",
+  "status": "provisional",
+  "authority": "GitHub versioned canon ledger",
+  "rules": [
+    "Name similarity is evidence for review, never authority to merge.",
+    "Deprecated names remain visible for provenance.",
+    "An alias may refer to the same entity, a historical phase, a title, or a disputed identity relation.",
+    "Unresolved entries must not be silently normalized in downstream exports."
+  ],
+  "entries": [
+    {
+      "canonical_id": "CHAR-ZAREA-0001",
+      "canonical_name": "Zarea",
+      "aliases": ["Zeraxis"],
+      "relationship": "same-person identity relationship",
+      "status": "canon-supported",
+      "notes": "Zarea is the preferred project identity. Zeraxis remains an established persona and source name. She/her pronouns are authoritative."
+    },
+    {
+      "canonical_id": "CHAR-KAELEN-0001",
+      "canonical_name": "Kaelen Wistermourn",
+      "aliases": ["Kael"],
+      "relationship": "short-form name",
+      "status": "canon-supported",
+      "notes": "Do not create separate character records without explicit evidence."
+    },
+    {
+      "canonical_id": "CHAR-NIX-0001",
+      "canonical_name": "Nix",
+      "aliases": ["Nyx"],
+      "relationship": "corrected former name",
+      "status": "canon-locked",
+      "deprecated_aliases": ["Nyx"],
+      "notes": "Nyx is deprecated and must not appear in new exports except as correction history."
+    },
+    {
+      "canonical_id": "CHAR-VESPER-REVIEW-0001",
+      "canonical_name": null,
+      "aliases": ["Vespertrail", "Vesperglow"],
+      "relationship": "unresolved possible rename or sibling canon",
+      "status": "review-required",
+      "notes": "Preserve both until source recovery establishes whether these are one character, a renamed character, or distinct entities."
+    },
+    {
+      "canonical_id": "CHAR-MOONTHISTLE-REVIEW-0001",
+      "canonical_name": "Moonthistle",
+      "aliases": [],
+      "relationship": "duplicate-record hazard",
+      "status": "review-required",
+      "notes": "Multiple JanitorAI or lorebook records exist. Do not merge automatically. Compare IDs, source chats, roles, and visual canon."
+    },
+    {
+      "canonical_id": "CHAR-VEYRA-0001",
+      "canonical_name": "Veyra",
+      "aliases": [],
+      "relationship": "distinct entity",
+      "status": "canon-locked-separation",
+      "must_not_merge_with": ["Mira Sweepwind", "The Seven"],
+      "notes": "Veyra / Cannon Cutter material must remain separate from Mira and Seven canon."
+    },
+    {
+      "canonical_id": "CHAR-JUNIPER-SPRIG-0001",
+      "canonical_name": "Juniper Sprig",
+      "aliases": [],
+      "relationship": "possible role-history collision",
+      "status": "review-required",
+      "must_compare_with": ["Juniper Vale"],
+      "notes": "Do not merge Juniper Sprig and Juniper Vale solely because of shared first name."
+    },
+    {
+      "canonical_id": "CHAR-JUNIPER-VALE-0001",
+      "canonical_name": "Juniper Vale",
+      "aliases": [],
+      "relationship": "possible role-history collision",
+      "status": "review-required",
+      "must_compare_with": ["Juniper Sprig"],
+      "notes": "Currently treated as distinct unless source recovery proves otherwise."
+    }
+  ]
+}

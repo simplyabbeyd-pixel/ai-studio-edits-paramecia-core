@@ -1,0 +1,30 @@
+flowchart LR
+    Chats["Project 0 Chats"] --> Capture["Exact Capture"]
+    Capture --> Notion["Notion Working Studio"]
+    Notion --> Gates["Three Accord Gates"]
+    Gates -->|"Approved"| GitHub["GitHub Canon Ledger"]
+    Gates -->|"Unresolved"| Queue["Contradiction / Research Queue"]
+    Queue --> Notion
+    GitHub --> Router["Diagram Tool Router"]
+    Router --> Mermaid["Mermaid Source"]
+    Router --> BeautifulAI["Beautiful.ai Structured Diagrams"]
+    Router --> Figma["Figma / FigJam Experiments"]
+    Router --> Ace["Ace Knowledge Graph"]
+    Mermaid --> PowerPoint["Primary PowerPoint"]
+    BeautifulAI --> PowerPoint
+    Figma --> PowerPoint
+    Ace --> PowerPoint
+    PowerPoint --> Review["Canon + Accessibility Review"]
+    Review -->|"Pass"| Publish["Published Living Atlas"]
+    Review -->|"Correction"| Notion
+    Publish --> Archive["Notion Links + GitHub References"]
+
+    classDef source fill:#eef3e8,stroke:#4f6b4f,stroke-width:2px,color:#1f2a1f;
+    classDef studio fill:#f2edf5,stroke:#6e5a8a,stroke-width:2px,color:#2d2138;
+    classDef artifact fill:#edf3f6,stroke:#6c8fa3,stroke-width:2px,color:#22333b;
+    classDef warning fill:#f8ece7,stroke:#b56f7a,stroke-width:2px,color:#44252d;
+
+    class Chats,Capture,GitHub,Publish,Archive source;
+    class Notion,Gates,Router studio;
+    class Mermaid,BeautifulAI,Figma,Ace,PowerPoint,Review artifact;
+    class Queue warning;

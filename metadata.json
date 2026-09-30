@@ -1,0 +1,8 @@
+{
+  "name": "Paramecia Core — Living World Engine & Atlas",
+  "description": "Interactive Living Atlas, relational knowledge graph, Three Accords cosmology, regional pedagogy, canon registries, and Hells Branch recovery engine for the Paramecia and Triquel universe.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

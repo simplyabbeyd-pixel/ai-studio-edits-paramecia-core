@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "timepoint": 0,
+  "status": "foundation-canon",
+  "crosskin_relational_before_biological": true,
+  "entries": [
+    {"id":"cragsong","name":"Cragsong Crosskin","peoples":["Ravenkin","Wolkin"],"home":"High Crags and Wyvern Peaks","early_name":"Stormwhisper","principle":"Watch together, but do not mistake watching for ownership."},
+    {"id":"gloamvale","name":"Gloamvale Crosskin","peoples":["Mothkin","Túlkin"],"home":"Night Forest Canopy","early_name":"Luminmoth","principle":"Not all paths must remain visible to remain true."},
+    {"id":"root-heart","name":"Root-Heart Crosskin","peoples":["Dervkin","Bearkin"],"home":"Heartwood Forest","early_name":"Brambleantler","principle":"Guard what cannot be owned."},
+    {"id":"wildfur","name":"Wildfur Crosskin","peoples":["Foxkin","Catkin"],"home":"Temperate Woodlands","early_name":"Brushstepper","principle":"Learn the boundary well enough to meet at it."},
+    {"id":"tidebond","name":"Tidebond Crosskin","peoples":["Turtlefolk","Otterfolk"],"home":"Bog-Delta and Coastal Wetlands","early_name":"Shellsplash","principle":"Hold the current without stopping it."},
+    {"id":"sunscale","name":"Sunscale Crosskin","peoples":["Snakekin","Lizardkin"],"home":"Scorched Scrub and Desert-Dry Scrub","early_name":"Dunehed","spelling_status":"working","principle":"Scarcity does not excuse abandonment."},
+    {"id":"webdusk","name":"Webdusk Crosskin","peoples":["Batkin","Spiderkin"],"home":"Echoing Caverns and Cave-Underroot","early_name":"Swarmfolk","principle":"A path must remain a path, not become a cage."},
+    {"id":"mudsong","name":"Mudsong Crosskin","peoples":["Swampfolk","Frogfolk"],"home":"Mycelial Marshes and Swamp-Bog","early_name":"Sporebloom","principle":"Clean water must still remain alive."},
+    {"id":"wetlands-edge","name":"Wetlands-Edge Crosskin","peoples":["Beaverkin","Ratfolk"],"home":"Riverway and Wetlands Edge","principle":"Repair the cause, not only the damage."},
+    {"id":"thornbloom","name":"Thornbloom Crosskin","peoples":["Hedgekin","Groundhogkin"],"home":"Hedgerow and Garden Margin","early_name":"Briarwhorl","principle":"A boundary should shelter life, not imprison it."},
+    {"id":"nectarbind","name":"Nectarbind Crosskin","peoples":["Pollinatorkin","Túlkin"],"home":"Flowering Orchard and Pollinator Guild Zone","early_name":"Honeywing","principle":"A gift is not a debt."},
+    {"id":"watchkin","name":"Watchkin Crosskin","peoples":["Ravenkin","Witness-Path Kin"],"home":"Silent Threshold","early_name":"Gravewitness","principle":"Remembering must not become possession."}
+  ]
+}

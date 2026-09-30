@@ -1,0 +1,29 @@
+{
+  "name": "Felix.Null",
+  "version": "0.1.0",
+  "status": "bridge-scaffold",
+  "principle": "Nothing flourishes alone.",
+  "drive": {
+    "felix_zone": "1LO3aiYRbEA6qUXDQ6D8DG8tzQyAyw1Xp",
+    "build_lab": "1wxGmFrEQV8rUmK_jfKStRuyNAM_QAlnR",
+    "colab_runtime": "1vrv3ElM_2hfDrX0mKSww1QEnBgfRueJb",
+    "apps_script_automation": "1mqD7vvtsc7PyuynTJ3_SiFRz4baDhoU5"
+  },
+  "runtimes": {
+    "colab": {
+      "role": "compute",
+      "path": "integrations/felix-null/colab/felix_bridge.ipynb"
+    },
+    "apps_script": {
+      "role": "google-native-automation",
+      "path": "integrations/felix-null/apps-script"
+    }
+  },
+  "guardrails": {
+    "store_secrets": false,
+    "preserve_raw_sources": true,
+    "canon_promotion_requires_validation": true,
+    "prefer_reversible_writes": true,
+    "log_automations": true
+  }
+}

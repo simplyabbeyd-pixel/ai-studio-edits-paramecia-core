@@ -1,0 +1,187 @@
+{
+  "id": "ecology.first_loam",
+  "name": "The First Loam",
+  "aliases": ["Sloam Memory Ecology", "First Memory Ecology"],
+  "canon_status": "provisional_core",
+  "scope": [
+    "deep_time_ecology",
+    "mycelial_marshes",
+    "planetary_memory",
+    "living_places"
+  ],
+  "core_laws": [
+    "What stays changed may learn.",
+    "Carbon remembers through structure; mycelium through relation; moss through condition.",
+    "Memory may inform the present, but memory is not sovereignty.",
+    "Observation does not create authority.",
+    "Connection is not permission.",
+    "Walking is an ecological function, not a lifestyle."
+  ],
+  "world_frame": {
+    "world_name": "Veymire",
+    "world_name_status": "provisional",
+    "planetary_pattern": "Miremind",
+    "people_or_substrate": "Sloam",
+    "cosmology_options": [
+      "separate_planet",
+      "proto_triquel",
+      "ancestral_world_memory",
+      "cosmological_prototype"
+    ]
+  },
+  "evolution_sequence": [
+    "receive",
+    "hold",
+    "alter",
+    "compare",
+    "anticipate",
+    "prefer",
+    "rejoin"
+  ],
+  "memory_foundations": {
+    "carbon": "structural_memory",
+    "water": "temporal_and_movement_memory",
+    "mycelium": "relational_memory",
+    "moss": "condition_memory",
+    "minerals": "geological_memory",
+    "microbial_communities": "adaptive_memory"
+  },
+  "memory_hierarchy": [
+    "touch_memory",
+    "exchange_memory",
+    "carbon_memory",
+    "water_memory",
+    "mineral_memory",
+    "absence_memory"
+  ],
+  "identity_scales": [
+    {"scale": "tuft", "duration": "hours_to_seasons"},
+    {"scale": "patch", "duration": "seasons_to_decades"},
+    {"scale": "marsh", "duration": "centuries"},
+    {"scale": "basin", "duration": "millennia"},
+    {"scale": "continental", "duration": "ages"},
+    {"scale": "planetary", "duration": "eons"}
+  ],
+  "mobility_functions": [
+    "reconnect_isolated_wetlands",
+    "transport_spores_and_microbes",
+    "carry_water_into_drought_fractures",
+    "move_nutrients_between_depleted_biomes",
+    "restore_mineral_balance",
+    "shade_damaged_soil",
+    "sequester_toxins",
+    "raise_spores_above_flood_level",
+    "reconnect_severed_fungal_routes",
+    "establish_new_memory_patches"
+  ],
+  "mobile_body": {
+    "origin": "ecological_function_not_human_imitation",
+    "transparency_functions": [
+      "photosynthesis",
+      "capacity_legibility",
+      "water_visibility",
+      "spore_incubation",
+      "mineral_sorting",
+      "toxin_sequestration"
+    ],
+    "authority_boundary": "Visibility does not grant permission to inspect, diagnose, access, or intervene."
+  },
+  "lineages": [
+    {
+      "id": "substratum",
+      "name": "The Substratum",
+      "principle": "stability",
+      "function": "hold_shape_load_deep_carbon_and_mineral_continuity",
+      "gift": ["endurance", "grounding", "aquifer_shelter"],
+      "failure_state": ["enclosure", "rigidity", "refusal_to_release"],
+      "restoration": ["aeration", "fracture_channels", "root_invitation", "shared_load", "decomposition"]
+    },
+    {
+      "id": "filaments",
+      "name": "The Filaments",
+      "principle": "connection",
+      "function": "carry_signals_nutrients_spores_and_memory",
+      "gift": ["translation", "redundancy", "exchange"],
+      "failure_state": ["enmeshment", "unconsented_transmission", "overload", "contagion"],
+      "restoration": ["transfer_consent", "clean_disconnection", "route_isolation", "protected_no_network_zones"]
+    },
+    {
+      "id": "humidors",
+      "name": "The Humidors",
+      "principle": "retention",
+      "function": "hold_water_carbon_spores_nutrients_and_viable_potential",
+      "gift": ["continuity", "renewal", "safe_incubation"],
+      "failure_state": ["hoarding", "stagnation", "saturation", "harmful_preservation"],
+      "restoration": ["timed_release", "fresh_inflow", "cleansing_flow", "recipient_consent"]
+    },
+    {
+      "id": "luminara",
+      "name": "The Luminara",
+      "principle": "transformation",
+      "function": "break_down_refine_redirect_energy_and_create_new_forms",
+      "gift": ["adaptation", "alchemy", "evolutionary_possibility"],
+      "failure_state": ["compulsory_change", "extractive_change", "destabilization", "novelty_without_continuity"],
+      "restoration": ["slow_phases", "witness_cost", "reversible_trials", "return_paths"]
+    },
+    {
+      "id": "resonants",
+      "name": "The Resonants",
+      "principle": "harmony",
+      "function": "detect_cycles_imbalance_stress_waves_and_dissonance",
+      "gift": ["regulation", "coordination", "timing"],
+      "failure_state": ["enforced_conformity", "silencing", "compulsory_synchrony"],
+      "restoration": ["polyphony", "protected_dissent", "asynchronous_participation", "recognition_before_regulation"]
+    },
+    {
+      "id": "silentia",
+      "name": "The Silentia",
+      "principle": "stillness",
+      "function": "preserve_unformed_potential_rest_and_incubation",
+      "gift": ["patience", "refusal", "rest", "future_possibility"],
+      "failure_state": ["abandonment", "permanent_withdrawal", "imposed_silence"],
+      "restoration": ["gentle_invitation", "visible_exits", "warmth", "seasonal_waking", "right_to_remain_dormant"]
+    }
+  ],
+  "regional_integrations": [
+    "canon/regions/mycelial-marshes.md",
+    "echoing_caverns",
+    "nightforest_canopy",
+    "great_meadows",
+    "flowering_orchard",
+    "beaverkin_way"
+  ],
+  "runtime": {
+    "memory_write_chain": [
+      "condition_sensed",
+      "change_retained",
+      "pattern_compared",
+      "response_selected",
+      "ecological_consequence",
+      "memory_layer_updated"
+    ],
+    "trackable_states": [
+      "moisture_history",
+      "carbon_depth",
+      "network_load",
+      "route_integrity",
+      "contamination_level",
+      "local_consent_boundary",
+      "dormant_potential",
+      "absence_trace",
+      "restoration_readiness",
+      "distributed_burden"
+    ]
+  },
+  "source_documents": [
+    "canon/ecologies/first-loam-sloam-memory-ecology.md",
+    "canon/regions/mycelial-marshes.md"
+  ],
+  "open_questions": [
+    "cosmological_status_of_veymire",
+    "meaning_and_origin_of_sloam_name",
+    "transition_to_person_scale_consciousness",
+    "relationship_to_nine_civilizational_paths",
+    "miremind_action_capacity",
+    "later_kin_continuities"
+  ]
+}

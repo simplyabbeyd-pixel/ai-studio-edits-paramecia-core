@@ -1,0 +1,22 @@
+{
+  "pack_name": "Project 0 Core Pack",
+  "version": "1.0.0",
+  "project": "◎ Project 0❍",
+  "skills": [
+    "morning-reentry-brief",
+    "embercurrent",
+    "recovery-amber",
+    "re-entry",
+    "cartographer",
+    "boundary-keeper",
+    "harbor",
+    "researcher",
+    "worldbuilder",
+    "veyr-protocol"
+  ],
+  "architecture": {
+    "plugins_modify": "behavior",
+    "bundles_activate": "plugins",
+    "overlays_modify": "delivery"
+  }
+}
